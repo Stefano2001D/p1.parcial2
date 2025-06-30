@@ -4,7 +4,7 @@
         "nombre": "Producto",
         "descripcion": "Descripción del producto",
         "precio": 0,
-        "imagen": "images/producto-de-ejemplo.jpg",
+        "imagen": "imagenes/producto-de-ejemplo.jpg",
         "categoría": "Nombre de la categoría"
     }
 ]
