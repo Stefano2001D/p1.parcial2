@@ -21,7 +21,7 @@ class Carrito {
         this.productos = JSON.parse(localStorage.getItem('carrito')) || [];
     }
 
-    // Agregar producto al carrito
+    // Agrego el producto al carrito 
     agregarProducto(producto) {
         const existe = this.productos.find(item => item.id === producto.id);
         if (existe) {
@@ -258,14 +258,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-//{ id: 1, nombre: 'Pearl Pedal de Bombo Demon Drive c/cadena P3000C', descripcion: 'El más rápido, suave y versátil pedal de la historia de Pearl, ahora con cadena. El Pearl P3000C combina las características del mítico Demon Drive de Pearl con el poder que da el uso de la cadena', precio: 652987, imagen: 'imagenes/pedaldemondrive.jpg', categoria: 'Soportes', stock: 10 },
-  //  { id: 2, nombre: 'Gibraltar Banqueta 9608 / 3 Patas / Asiento redondo', descripcion: 'Banqueta a rosca Asiento redondo altura 67 cm diametro 33 cm', precio: 400000, imagen: 'imagenes/banquetagibraltar.jpg', categoria: 'Soportes', stock: 5 },
-    //{ id: 3, nombre: 'Zildjian A Medium Thin Crash 18', descripcion: 'Esta serie se caracteriza por ser la más conocida, usada y famosa, la que le dio su fama a Zildjian, ampliándose con el tiempo la gama de modelos dentro de la serie, variando sus espesores, desarrollo, medidas, pero manteniendo siempre lo que fue el principio, el origen de los platillos más tradicionales', precio: 670000, imagen: 'imagenes/zildjian18.jpg', categoria: 'Platillos', stock: 8 },
-    //{ id: 4, nombre: 'Gibraltar Soporte Boom 6709', descripcion: 'Soporte de 3 niveles con doble refuerzo, Brazo de fundición retráctil con bloqueo de memoria G-Style y ajustable en altura', precio: 350000, imagen: 'imagenes/soportegibraltar.jpg', categoria: 'Soportes', stock: 2 },
-    //{ id: 5, nombre: 'Zildjian A New Beat Hi Hat 14', descripcion: 'Un platillo tradicional, versátil, clásico y de amplio espectro de uso. Aleación: B20. Sonido: Brillante y con volúmen.', precio: 800000, imagen: 'imagenes/hihat.jpg', categoria: 'Platillos', stock: 13 },
-    //{ id: 6, nombre: 'Zildjian K Custom Medium Ride 22', descripcion: 'Oscuramente Vintage y Versátil Estilo: Artesanal. Sonido: Oscuro, Explosivo y Cálido. Aleación: B20. Timbre: Medio a Bajo', precio: 1200000, imagen: 'imagenes/ride.jpg', categoria: 'Platillos', stock: 4 },
-    //{ id: 7, nombre: 'Tama Superstar Classic 22', descripcion: 'Cascos de arce de 6 capas de 5 mm excepto bombo de 8 capas de 7 mm', precio: 2000000, imagen: 'imageness/tama.jpg', categoria: 'Baterias', stock: 3 },
-    //{ id: 8, nombre: 'Gretsch Catalina Jazz 18', descripcion: '7 Láminas de Maple. Aros 2.3 mm. Parches REMO UT Arenados. GTS Suspension System', precio: 2500000, imagen: 'imagenes/gretsch.jpg', categoria: 'Baterias', stock: 3 },
-    //{ id: 9, nombre: 'Sonor Vintage Series', descripcion: 'El ángulo redondeado en el borde del casco crea mayor contacto del parche, lo que genera un sonido mucho más corto en comparación a los aros cortados en 45 grados. El resultado es un sonido cálido, seco pero resonante que recuerda a las baterías vintage.', precio: 3000000, imagen: 'imagenes/sonor.jpg', categoria: 'Baterias', stock: 3 },
-
-    
