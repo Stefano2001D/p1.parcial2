@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Programación 1 | Parcial 2 | Azzolini, Stefano</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Programación I | Parcial 2 | Azzolini, Stefano | Mi carrito</h1>
+            <!-- Carrito -->
+            <div id="carrito">
+                <p><span id="items-carrito" class="cantidad">0</span> ítems agregados</p>
+                <p>Total: $<span id="total-carrito" class="total">0</span></p>
+                <button id="ver-carrito">Ver carrito</button>
+            </div>
+        </header>
+        <main>
+            <div id="filtrar-ordenar">
+                <!-- Filtrar -->
+                <div id="filtrar">
+                    <p>Filtrar por</p>
+                    <select id="filtrar-por">
+                        <option value="todos">Todos</option>
+                        <option value="Soportes">Soportes</option>
+                        <option value="Platillos">Platillos</option>
+                        <option value="Baterias">Baterias</option>
+                    </select>
+                </div>
+                
+                <!-- Ordenar -->
+                <div id="ordenar">
+                    <p>Ordenar por</p>
+                    <select id="ordenar-por">
+                        <option value="mas-relevante">Más relevante</option>
+                        <option value="precio-ascendente">Precio (menor a mayor)</option>
+                        <option value="precio-descendente">Precio (mayor a menor)</option>
+                    </select>
+                </div>
+            </div>
+
+            <section id="productos"></section>
+
+            <!-- Modal Carrito -->
+            <div id="modal-carrito" class="modal">
+                <div class="modal-contenido">
+                    <h2>Detalle del Carrito</h2>
+                    <ul id="contenido-carrito"></ul>
+                    <p id="monto-total">Total: $0.00</p>
+                    <div id="botones-modal">
+                        <button id="vaciar-carrito">Vaciar Carrito</button>
+                        <button id="cerrar-modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Profesor Fabrizio Carlassara</li>
+                <li>
+                    <a href="mailto:fabrizio.carlassara@davinci.edu.ar?subject=P1%20-%20Consulta%20-%20DW2[M|T|N][A|B]%20-%20Apellido,%20Nombre" target="_blank">fabrizio.carlassara@davinci.edu.ar</a>
+                </li>
+                <li>Programación 1</li>
+                <li>
+                    <a target="_blank" href="https://github.com/Stefano2001D/p1-parcial2.git">URL del repo de GitHub</a>
+                </li>
+            </ul>
+          
+        </footer>
+    <script src="index2.js"></script>
+</body>
+</html>
